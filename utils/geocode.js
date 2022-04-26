@@ -4,6 +4,7 @@ const geocode = (address, callback) => {
     // URL contains access token, keep empty when pushing to repo.
     // const url = '' + encodeURIComponent(address) + '';
 
+
     request({ url: url, json: true }, (error, response) => {
         if (error) {
             callback('Unable to connect to location services.', undefined);

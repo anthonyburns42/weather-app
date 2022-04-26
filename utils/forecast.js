@@ -4,6 +4,7 @@ const forecast = (lat, long, callback) => {
     // URL contains access token, keep empty when pushing to repo.
     // const url = '' + lat + ',' + long + '';
 
+
     request({ url: url, json: true }, (error, response) => {
         if (error) {
             callback('Unable to connect to weather service.', undefined);
